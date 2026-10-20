@@ -1,6 +1,7 @@
 {
   "replace": false,
   "entries": [
-    "corpseblossom:zombie_additions"
+    "corpseblossom:zombie_additions",
+    "corpseblossom:dungeon_additions"
   ]
 }

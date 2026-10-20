@@ -1,6 +1,8 @@
 package net.ender.corpseblossom;
 
 import net.ender.corpseblossom.item.ModCreativeModeTab;
+import net.ender.corpseblossom.loot.CorpseblossomLootModifiers;
+import net.ender.corpseblossom.registries.CBBlockRegistry;
 import net.ender.corpseblossom.registries.CBItemRegistry;
 import org.slf4j.Logger;
 
@@ -48,10 +50,14 @@ public class Corpseblossom {
 
         NeoForge.EVENT_BUS.register(this);
 
-
+        //ITEM
         CBItemRegistry.register(modEventBus);
-
+        //CREATIVE MODE TAB
         ModCreativeModeTab.register(modEventBus);
+        //LOOT
+        CorpseblossomLootModifiers.register(modEventBus);
+        //BLOCKS
+        CBBlockRegistry.register(modEventBus);
 
     }
 
