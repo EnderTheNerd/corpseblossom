@@ -18,8 +18,8 @@ import java.util.function.Supplier;
 public class CBBlockRegistry {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(Registries.BLOCK, Corpseblossom.MOD_ID);
 
-    public static final DeferredBlock<Block> ROTTEN_STALK_CROP = registerBlock("rotten_stalk_crop",
-            () -> new RottenStalkBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));
+    // public static final DeferredBlock<Block> ROTTEN_STALK_CROP = registerBlock("rotten_stalk_crop",
+          //  () -> new RottenStalkBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.BEETROOTS)));
 
 
 
