@@ -1,5 +1,7 @@
 package net.ender.corpseblossom;
 
+import net.ender.corpseblossom.item.ModCreativeModeTab;
+import net.ender.corpseblossom.registries.CBItemRegistry;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -47,18 +49,25 @@ public class Corpseblossom {
         NeoForge.EVENT_BUS.register(this);
 
 
+        CBItemRegistry.register(modEventBus);
 
-        modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+        ModCreativeModeTab.register(modEventBus);
+
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
 
     }
 
-
+    // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
 
     }
 
+    // You can use SubscribeEvent and let the Event Bus discover methods to call
+   @SubscribeEvent
+    public void onServerStarting(ServerStartingEvent event) {
 
+
+    }
 }

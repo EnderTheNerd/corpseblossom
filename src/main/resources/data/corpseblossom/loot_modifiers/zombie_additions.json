@@ -1,0 +1,10 @@
+{
+  "conditions": [
+    {
+      "condition": "neoforge:loot_table_id",
+      "loot_table_id": "minecraft:entities/zombie"
+    }
+  ],
+  "type": "corpseblossom:add_to_table",
+  "loot_table": "corpseblossom:entities/rotten_seeds"
+}
